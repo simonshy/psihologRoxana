@@ -1,0 +1,112 @@
+body{margin: 0;}
+
+#home{background-color: #44335b;}
+
+.meniu{position: fixed; z-index: 98;
+  background-color: #9c3d54;
+  width: 0; height: 100%;
+  right: 0;
+  padding-top: 20%;
+  transition: 0.5s;
+}
+.meniu.inchide{width:77%}
+@media screen and (max-width:719px){
+  .meniu{padding-top: 25%;}
+}
+@media screen and (max-width:480px){
+  .meniu{padding-top: 30%;}
+}
+.meniu a{text-decoration: none;
+  display: block;
+  margin: 0;
+  padding-left: 30%;
+  color: #ffcc96;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width:719px){
+  .meniu a{font-size: 2em; padding-left: 20%;}
+}
+@media screen and (max-width:480px){
+  .meniu a{font-size: 1.5em;}
+}
+
+/*.intro{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+}*/
+#intro{width: 50%;}
+.baranav{position: fixed; z-index: 99;
+  display: flex; justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  
+}
+.mih{
+  width: 25%;
+  margin-top: 8%;
+  margin-left: -25%;
+  animation: mih 0.5s ease-out 5.5s forwards;
+}
+@keyframes mih {from {margin-left: -25%}
+                  to {margin-left: 19.2%}}
+
+.rox{position: absolute;
+  margin-top: 5%;
+  margin-left: -30%;
+  width: 30%;
+  animation: rox 0.5s ease-out 6s forwards;
+}
+@keyframes rox {from {margin-left: -30%}
+                  to {margin-left: -7%}}
+
+.menclose{
+  margin: 5%;
+  width: 100px;
+  opacity: 0;
+  animation: menclose 0.5s ease-out 6s forwards;
+}
+@keyframes menclose {from {opacity: 0;}
+                       to {opacity: 1;}}
+.menclose:after, 
+.menclose:before {
+  background-color: #ff8474;
+  border-radius: 2px;
+  content: '';
+  display: block;
+  height: 10px;
+  margin: 5px 0;
+  transition: all .2s ease-in-out;
+}
+.menclose.deschide:before {transform: translateY(10px) rotate(135deg);}
+.menclose.deschide:after {transform: translateY(-10px) rotate(-135deg);}
+@media screen and (min-width:600px){
+  .menclose:before, .menclose:after{
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;}
+}
+
+#contact{
+  background-color:#44335b;
+  color: #ffcc96;
+  padding: 5% 5%;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+@media screen and (min-width:600px){
+  h2{font-size: 2em;}
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+@media screen and (min-width:600px){
+  p{font-size: 1.5em;}
+}
+a:hover {letter-spacing: 5px;}
