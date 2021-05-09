@@ -37,12 +37,15 @@ body{margin: 0;}
   margin-top: 5%;
   margin-left: 25%;
 }*/
-#intro{width: 50%;}
+#intro{
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
 .baranav{position: fixed; z-index: 99;
   display: flex; justify-content: space-around;
   overflow: hidden;
-  width: 100%;
-  
+  width: 100%;  
 }
 .mih{
   width: 25%;
