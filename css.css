@@ -39,7 +39,7 @@ body{margin: 0;}
 }*/
 #intro{
   width: 50%;
-  margin-top: 5%;
+  padding-top: 5%;
   margin-left: 25%;
 }
 .baranav{position: fixed; z-index: 99;
