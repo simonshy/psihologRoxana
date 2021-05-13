@@ -1,0 +1,124 @@
+body{margin: 0;}
+
+section{
+  background-color:#44335b;
+  color: #ffcc96;
+  padding: 5% 5%;
+}
+#acasa{padding: 0}
+
+.meniu{position: fixed; z-index: 98;
+  background-color: #9c3d54;
+  width: 0; height: 100%;
+  right: 0;
+  padding-top: 30%;
+  transition: 0.5s;
+}
+.meniu.inchide{width:77%}
+@media screen and (min-width:576px){
+  .meniu{padding-top: 25%;}}
+@media screen and (min-width:768px){
+  .meniu{padding-top: 20%;}}
+
+.meniu a{text-decoration: none;
+  display: block;
+  margin: 0;
+  padding-left: 15%;
+  color: #ffcc96;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  transition-duration: 0.5s;
+}
+@media screen and (min-width:576px){
+  .meniu a{font-size: 2em; padding-left: 20%;}}
+@media screen and (min-width:768px){
+  .meniu a{font-size: 3em; padding-left: 30%;}}  
+a:hover {letter-spacing: 5px;}
+
+/*.intro, .fly{ width: 50%; margin-top: 5%;}
+.intro{ 
+  margin-left: 25%;
+  opacity: 1;
+  animation: introut 8s forwards;}
+@keyframes introut {from {opacity: 1;}
+                    to {opacity: 0;}}
+.fly{position:absolute;
+  margin-left: -50%; 
+  opacity: 0;
+  animation: flyin 8s forwards;}
+@keyframes flyin {from {opacity: 0;}
+                  to {opacity: 1;}}*/
+#intro{
+  width: 50%;
+  padding-top: 5%;
+  margin-left: 25%;
+}
+
+.baranav{position: fixed; z-index: 99;
+  display: flex; justify-content: space-around;
+  overflow: hidden;
+  width: 100%; 
+}
+.mih{
+  width: 25%;
+  margin-top: 8%;
+  margin-left: -25%;
+  animation: mih 0.5s ease-out 5.5s forwards;
+}
+@keyframes mih {from {margin-left: -25%}
+                  to {margin-left: 19.2%}}
+
+.rox{position: absolute;
+  margin-top: 5%;
+  margin-left: -30%;
+  width: 30%;
+  animation: rox 0.5s ease-out 6s forwards;
+}
+@keyframes rox {from {margin-left: -30%}
+                  to {margin-left: -7%}}
+.rox:hover {background-color: #ff8474}
+
+.menclose{
+  margin: 5%;
+  width: 100px;
+  opacity: 0;
+  animation: menclose 0.5s ease-out 6s forwards;
+}
+@keyframes menclose {from {opacity: 0;}
+                       to {opacity: 1;}}
+.menclose:after, 
+.menclose:before {
+  background-color: #ff8474;
+  border-radius: 0.2vw;
+  content: '';
+  display: block;
+  height: 2vw;
+  margin: 0.6vw 0;
+  transition: all .2s ease-in-out;
+}
+.menclose.deschide:before {transform: translateY(0.6vw) rotate(135deg);}
+.menclose.deschide:after {transform: translateY(-0.6vw) rotate(-135deg);}
+
+.golpoza {height:10vw;}
+#contact{
+  background-color:#44335b;
+  color: #ffcc96;
+  padding: 5% 5%;
+}
+h2,li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+}
+@media screen and (min-width:576px){
+  h2,li {font-size: 1.6em;}}
+@media screen and (min-width:768px){
+  h2,li {font-size: 2em;}}
+li {padding-top: 15px;}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+@media screen and (min-width:576px){
+  p {font-size: 1.2em;}}
+@media screen and (min-width:768px){
+  p {font-size: 1.6em;}}
