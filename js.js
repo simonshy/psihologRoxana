@@ -34,5 +34,5 @@ let animationfly = bodymovin.loadAnimation({
 });
 
   iconfly.addEventListener('click', function() {
-  animationfly.playSegments([0,60], true);
+  animationfly.play(true);
 });
